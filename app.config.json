@@ -1,0 +1,16 @@
+{
+  "environmentUrl": "https://your-environment-id.apps.dynatrace.com",
+  "app": {
+    "id": "my.sre.error.analysis",
+    "name": "SRE Error Analysis Dashboard",
+    "description": "Investigate service errors and correlate them with recent deployments.",
+    "version": "1.0.3",
+    "scopes": [
+      { "name": "storage:buckets:read", "comment": "Access the Grail buckets used by dashboard queries." },
+      { "name": "storage:spans:read", "comment": "Calculate service error rates and latency." },
+      { "name": "storage:events:read", "comment": "Read deployment events." },
+      { "name": "storage:logs:read", "comment": "Read error logs for service investigations." },
+      { "name": "storage:system:read", "comment": "Read Dynatrace-detected problems for service investigations." }
+    ]
+  }
+}
